@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Woxter",
+    "CIF":"F21588785",
+    "address": "Calle Pez 13 Madrid (España)"
+  },
+  {
+    "id": 2,
+    "name": "Logitech",
+    "CIF":"F21588786",
+    "address": "Calle Maria 15 Madrid (España)"
+  },
+  {
+    "id": 3,
+    "name": "Apple",
+    "CIF":"F21588787",
+    "address": "Calle Leo 21 Madrid (España)"
+  },
+  {
+    "id": 4,
+    "name": "Rowenta",
+    "CIF":"F21588788",
+    "address": "Calle Mimbre 14 Madrid (España)"
+  },
+  {
+    "id": 5,
+    "name": "Cecotec",
+    "CIF":"F21588789",
+    "address": "Calle Madera 23 Madrid (España)"
+  },
+  {
+    "id": 6,
+    "name": "Asus",
+    "CIF":"F21588790",
+    "address": "Calle Flor 44 Madrid (España)"
+  }
+]
