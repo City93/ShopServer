@@ -10,7 +10,8 @@ const getAllProducts = async (req, res) =>{
         const options = {
             page: parseInt(page, 10),
             limit: parseInt(perPage, 10),
-            sort: sort
+            sort: sort,
+            populate: {path: "id_provider"}
         }
         const data = await Product.paginate({},options)
         res.status(200).json(data)

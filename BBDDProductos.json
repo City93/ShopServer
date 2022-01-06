@@ -2,281 +2,386 @@
   {
     "id": 1,
     "name": "Silla gaming - Woxter Stinger Station Alien Rojo",
-    "rating": "Alta",
+    "rating": "3",
     "price": "99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_82959006/fee_786_587_png",
-    "provider": "Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_82959006/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
   {
-      "id": 2,
+    "id": 2,
     "name": "Silla gaming - Woxter Stinger Station Alien Verde",
-    "rating": "Alta",
+    "rating": "3",
     "price": "99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88738184/fee_786_587_png",
-    "provider": "Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88738184/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
   {
-      "id": 3,
+    "id": 3,
     "name": "Auriculares gaming - Logitech G432",
-    "rating": "Media",
+    "rating": "2",
     "price": "49.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_90225212/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_90225212/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
   {
-      "id": 4,
+    "id": 4,
     "name": "Auriculares gaming - Trust GXT 310",
-    "rating": "Media",
+    "rating": "2",
     "price": "14.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-72240053/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-72240053/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
   {
-      "id": 5,
+    "id": 5,
     "name": "Bicicleta eléctrica - SmartGyro Ebike Crosscity",
-    "rating": "Media",
+    "rating": "2",
     "price": "839",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86725666/fee_786_587_png",
-    "provider":"Worter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86725666/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
   {
-      "id": 6,
+    "id": 6,
     "name": "Apple AirPods (2021 3ª gen)",
-    "rating": "Alta",
+    "rating": "3",
     "price": "179",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88201882/fee_786_587_png",
-    "provider":"Apple"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88201882/fee_786_587_png",
+    "provider": "Apple",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13f"
+    }
   },
   {
-      "id": 7,
-    "name": "Apple HomePod mini, Siri, Altavoz 360º",
-    "rating": "Alta",
+    "id": 7,
+    "name": "Apple HomePod mini, Siri, 3voz 360º",
+    "rating": "3",
     "price": "89",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88572943/fee_786_587_png",
-    "provider":"Apple"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88572943/fee_786_587_png",
+    "provider": "Apple",
+        "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13f"
+    }
   },
- {
-  "id": 8,
+  {
+    "id": 8,
     "name": "Apple iMac (2021), 24 Retina 4.5K, Chip M1 de Apple",
-    "rating": "Media",
+    "rating": "2",
     "price": "1449",
     "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88722544/fee_786_587_png",
-    "provider":"Apple"
+    "provider": "Apple",
+        "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13f"
+    }
   },
- {
-  "id": 9,
+  {
+    "id": 9,
     "name": "Apple Magic Mouse - Ratón inalámbrico, Apple MK2E3ZM/A",
-    "rating": "Baja",
+    "rating": "1",
     "price": "59",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_87935596/fee_786_587_png",
-    "provider":"Apple"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_87935596/fee_786_587_png",
+    "provider": "Apple",
+        "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13f"
+    }
   },
- {
-  "id": 10,
+  {
+    "id": 10,
     "name": "Apple Watch Series 3 GPS, 38 mm",
-    "rating": "Media",
+    "rating": "2",
     "price": "219",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86317157/fee_786_587_png",
-    "provider":"Apple"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_86317157/fee_786_587_png",
+    "provider": "Apple",
+        "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13f"
+    }
   },
- {
-  "id": 11,
+  {
+    "id": 11,
     "name": "Cepillo alisador - Rowenta CF5820F0 Power Straight",
-    "rating": "Baja",
+    "rating": "1",
     "price": "36",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88948649/fee_786_587_png",
-    "provider":"Rowenta"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88948649/fee_786_587_png",
+    "provider": "Rowenta",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f140"
+    }
   },
- {
-  "id": 12,
+  {
+    "id": 12,
     "name": "Secador - Rowenta CV8250S Essentials Pro",
-    "rating": "Alta",
+    "rating": "3",
     "price": "34.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88777857/fee_786_587_png",
-    "provider":"Rowenta"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88777857/fee_786_587_png",
+    "provider": "Rowenta",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f140"
+    }
   },
- {
-  "id": 13,
+  {
+    "id": 13,
     "name": "Secador IoniCare 5250 EasyCollect Pro",
-    "rating": "Baja",
+    "rating": "1",
     "price": "27.90",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_85935762/fee_786_587_png",
-    "provider":"Cecotec"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_85935762/fee_786_587_png",
+    "provider": "Cecotec",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f141"
+    }
   },
- {
-  "id": 14,
+  {
+    "id": 14,
     "name": "Secador IoniCare 5450 Power&Go Pro Fire",
-    "rating": "Baja",
+    "rating": "1",
     "price": "23.90",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_85935878/fee_786_587_png",
-    "provider":"Cecotec"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_85935878/fee_786_587_png",
+    "provider": "Cecotec",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f141"
+    }
   },
- {
-  "id": 15,
+  {
+    "id": 15,
     "name": "Rizador - Cecotec Bamba Surfcare 800 Magic Waves Pro",
-    "rating": "Media",
+    "rating": "2",
     "price": "37.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88806789/fee_786_587_png",
-    "provider":"Cecotec"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88806789/fee_786_587_png",
+    "provider": "Cecotec",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f141"
+    }
   },
- {
-  "id": 16,
+  {
+    "id": 16,
     "name": "Plancha de pelo RitualCare 1100 HidraProtect Ion Touch",
-    "rating": "Alta",
+    "rating": "3",
     "price": "32.90",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_88625133/fee_786_587_png",
-    "provider":"Cecotec"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_88625133/fee_786_587_png",
+    "provider": "Cecotec",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f141"
+    }
   },
- {
-  "id": 17,
+  {
+    "id": 17,
     "name": "Secador - Cecotec 04244 IoniCare 6000 Rockstar Soft",
-    "rating": "Alta",
+    "rating": "3",
     "price": "129",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83132535/fee_786_587_png",
-    "provider":"Cecotec"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83132535/fee_786_587_png",
+    "provider": "Cecotec",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f141"
+    }
   },
- {
-  "id": 18,
+  {
+    "id": 18,
     "name": "Moldeador - Rowenta Multistyler Infinitos Looks 14 en 1 CF4230",
-    "rating": "Alta",
+    "rating": "3",
     "price": "52.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88780581/fee_786_587_png",
-    "provider":"Rowenta"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88780581/fee_786_587_png",
+    "provider": "Rowenta",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f140"
+    }
   },
- {
-  "id": 19,
+  {
+    "id": 19,
     "name": "Secador - Rowenta CV9820, 1500 W, Air-To-Care",
-    "rating": "Media",
+    "rating": "2",
     "price": "299",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88111510/fee_786_587_png",
-    "provider":"Rowenta"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88111510/fee_786_587_png",
+    "provider": "Rowenta",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f140"
+    }
   },
- {
-  "id": 20,
+  {
+    "id": 20,
     "name": "Micrófono - Woxter Mic Studio 100 Pro",
-    "rating": "Media",
+    "rating": "2",
     "price": "89.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80267205/fee_786_587_png",
-    "provider":"Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80267205/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
- {
-  "id": 21,
+  {
+    "id": 21,
     "name": "Micrófono - Woxter Mic Studio 50",
-    "rating": "Alta",
+    "rating": "3",
     "price": "45.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-79312783/fee_786_587_png",
-    "provider":"Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-79312783/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
- {
-  "id": 22,
+  {
+    "id": 22,
     "name": "Lector multitarjetas y DNI electrónico",
-    "rating": "Baja",
+    "rating": "1",
     "price": "15.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-79183074/fee_786_587_png",
-    "provider":"Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-79183074/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
- {
-  "id": 23,
+  {
+    "id": 23,
     "name": "Pizarra Electrónica - Woxter Smart Pad 90, 9”",
-    "rating": "Baja",
+    "rating": "1",
     "price": "15.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80049782/fee_786_587_png",
-    "provider":"Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-80049782/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
- {
-  "id": 24,
+  {
+    "id": 24,
     "name": "Alfombrilla para silla gaming",
-    "rating": "Alta",
+    "rating": "3",
     "price": "52.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-82275759/fee_786_587_png",
-    "provider":"Woxter"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-82275759/fee_786_587_png",
+    "provider": "Woxter",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13d"
+    }
   },
- {
-  "id": 25,
+  {
+    "id": 25,
     "name": "Palanca de cambios - Logitech Driving Force Shifter",
-    "rating": "Media",
+    "rating": "2",
     "price": "43.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-68729239/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-68729239/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 26,
+  {
+    "id": 26,
     "name": "Ratón gaming - Logitech G502 Hero",
-    "rating": "Media",
+    "rating": "2",
     "price": "49.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_90225213/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_90225213/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 27,
+  {
+    "id": 27,
     "name": "Batería para Logitech modelo 190304-2004",
-    "rating": "Alta",
+    "rating": "3",
     "price": "13.90",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_83700138/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MP_83700138/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 28,
+  {
+    "id": 28,
     "name": "Funda - Logitech Slim Folio Funda con Teclado Bluetooth Gris",
-    "rating": "Baja",
+    "rating": "1",
     "price": "78.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_73036498/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_73036498/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 29,
-    "name": "Altavoces para PC - Logitech Speaker System Z313 con subwoofer",
-    "rating": "Media",
+  {
+    "id": 29,
+    "name": "3voces para PC - Logitech Speaker System Z313 con subwoofer",
+    "rating": "2",
     "price": "38.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-33210036/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-33210036/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 30,
+  {
+    "id": 30,
     "name": "Webcams - Logitech C920S Pro HD, FHD 1080p",
-    "rating": "Alta",
+    "rating": "3",
     "price": "69.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88736143/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_88736143/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 31,
+  {
+    "id": 31,
     "name": "Ratón inalámbrico - Logitech M220 Silent, Inalámbrico, 1000 ppp",
-    "rating": "Media",
+    "rating": "2",
     "price": "12.99",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_89727835/fee_786_587_png",
-    "provider":"Logitech"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_89727835/fee_786_587_png",
+    "provider": "Logitech",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f13e"
+    }
   },
- {
-  "id": 32,
+  {
+    "id": 32,
     "name": "Monitor gaming - ASUS TUF Gaming VG279Q1R, 27 FHD",
-    "rating": "Alta",
+    "rating": "3",
     "price": "226",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_82548792/fee_786_587_png",
-    "provider":"Asus"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_82548792/fee_786_587_png",
+    "provider": "Asus",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f142"
+    }
   },
- {
-  "id": 33,
+  {
+    "id": 33,
     "name": "Monitor Gaming - Asus VG248QE, Gaming,24, TN FHD",
-    "rating": "Media",
+    "rating": "2",
     "price": "209",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-61783421/fee_786_587_png",
-    "provider":"Asus"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/pixelboxx-mss-61783421/fee_786_587_png",
+    "provider": "Asus",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f142"
+    }
   },
- {
-  "id": 34,
+  {
+    "id": 34,
     "name": "Monitor gaming - ASUS ROG Swift PG259QNR, 24.5 FHD",
-    "rating": "Media",
+    "rating": "2",
     "price": "698",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83740530/fee_786_587_png",
-    "provider":"Asus"
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_83740530/fee_786_587_png",
+    "provider": "Asus",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f142"
+    }
   },
- {
-  "id": 35,
+  {
+    "id": 35,
     "name": "Monitor gaming - Asus VG24VQ, 23.6, Full-HD, Curvo",
-    "rating": "Baja",
+    "rating": "1",
     "price": "244",
-    "image":"https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_77729786/fee_786_587_png",
-    "provider":"Asus"
-  }              
+    "image": "https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_77729786/fee_786_587_png",
+    "provider": "Asus",
+    "id_provider": {
+      "$oid": "61d5d9a3df8fc20331d7f142"
+    }
+  }
 ]
