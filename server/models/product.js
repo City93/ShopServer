@@ -3,6 +3,10 @@ const mongoosePaginate = require('mongoose-paginate')
 const Provider = require('./provider')
 
 const objectSchema = {
+    _id: {
+        type: mongoose.Schema.ObjectId,
+        select: false
+        },
     id: {type: Number},
     name: {type: String},
     rating: {type: String},

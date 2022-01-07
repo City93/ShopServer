@@ -12,7 +12,8 @@ const getAllProducts = async (req, res) =>{
             const options = {
                 page: parseInt(page, 10),
                 limit: parseInt(perPage, 10),
-                sort:  {name}
+                sort:  {name},
+                populate: {path: 'id_provider', select: '-_id'} 
             }
             
             const data = await Product.paginate({}, options);
@@ -23,7 +24,8 @@ const getAllProducts = async (req, res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
-                    sort:  {rating}
+                    sort:  {rating},
+                    populate: {path: 'id_provider', select: '-_id'} 
                 }
     
                 const data = await Product.paginate({}, options);
@@ -35,7 +37,8 @@ const getAllProducts = async (req, res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
-                    sort:  {price}
+                    sort:  {price},
+                    populate: {path: 'id_provider', select: '-_id'} 
                 }      
                 const data = await Product.paginate({}, options);
                 res.status(200).json(data)}
@@ -46,6 +49,7 @@ const getAllProducts = async (req, res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
+                    populate: {path: 'id_provider', select: '-_id'} 
                 }    
                 const data = await Product.paginate({}, options);
                 res.status(200).json(data)
@@ -69,7 +73,8 @@ const searchProduct = async (req,res) =>{
             const options = {
                 page: parseInt(page, 10),
                 limit: parseInt(perPage, 10),
-                sort:  {name}
+                sort:  {name},
+                populate: {path: 'id_provider', select: '-_id'}
             }
             
             const regex = new RegExp(escapeRegex(req.query.search), 'gi');
@@ -81,7 +86,8 @@ const searchProduct = async (req,res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
-                    sort:  {rating}
+                    sort:  {rating},
+                    populate: {path: 'id_provider', select: '-_id'} 
                 }
     
                 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
@@ -94,7 +100,8 @@ const searchProduct = async (req,res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
-                    sort:  {price}
+                    sort:  {price},
+                    populate: {path: 'id_provider', select: '-_id'} 
                 }      
                 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
                 const data = await Product.paginate({ $or: [{name:regex}, {provider: regex}] }, options);
@@ -106,6 +113,7 @@ const searchProduct = async (req,res) =>{
                 const options = {
                     page: parseInt(page, 10),
                     limit: parseInt(perPage, 10),
+                    populate: {path: 'id_provider', select: '-_id'}              
                 }    
                 const regex = new RegExp(escapeRegex(req.query.search), 'gi');
                 const data = await Product.paginate({ $or: [{name:regex}, {provider: regex}] }, options);
