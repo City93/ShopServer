@@ -1,0 +1,14 @@
+header{
+    border: 1px solid blue;
+    width: 100%
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    top:0;
+    left:0;
+}
+header ul{
+    list-style-type: none;
+    
+}
