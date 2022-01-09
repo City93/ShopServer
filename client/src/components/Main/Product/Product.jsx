@@ -5,7 +5,6 @@ import twoStars from './img/2_stars.png'
 import oneStar from './img/1_star.png'
 
 const Product = (props) => {
-  console.log(props.productInfo.name.split(' '))
 
   const paintRating = () =>{
     if(props.productInfo.rating == 3)

@@ -12,15 +12,33 @@ import { useDebounce } from "use-debounce";
 
 const App = () => {
     const [input, changeInput] = useState('');
-    const [productList, changeProductList] = useState('')
+    const [productList, changeProductList] = useState([])
+    const [nameSort, changeNameSort] = useState(1)
+    const [ratingSort, changeRatingSort] = useState()
+    const [priceSort, changePriceSort] = useState()
     const [value] = useDebounce(input, 1000)
 
      useEffect(() =>{
       const getProducts = async (searchValue) =>{
         try{
+          let uri;
+          console.log(value)
           if(searchValue){            
-            //console.log({searchValue})
-            const data = await axios.get(`http://localhost:3000/search?search=${searchValue.toLowerCase() || ''}`)
+            if(nameSort){
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&name=${nameSort}`
+            }
+            else if(ratingSort){
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&rating=${ratingSort}`
+            }
+            else if(priceSort){
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&price=${nameSort}`
+            }
+            else{
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}`
+            }
+            // console.log({searchValue})
+            console.log({uri})
+            const data = await axios.get(uri)
             const products = data.data.docs
             const productInfo = products.map((el,i) =>{return {
               name: el.name,
@@ -32,11 +50,12 @@ const App = () => {
               address_provider: el.id_provider.address
             }
           })
-          console.log(productInfo)
+          //console.log(productInfo)
           changeProductList(productInfo)
           }
           else{
-              const data = await axios.get(`http://localhost:3000/`)
+              console.log({uri})
+              const data = await axios.get('http://localhost:3000/')
               const products = data.data.docs
               const productInfo = products.map((el,i) =>{return {
                 name: el.name,
@@ -49,7 +68,7 @@ const App = () => {
                 from: 'esto viene de todo'
               }
             })
-            console.log({productInfo})
+            //console.log({productInfo})
             changeProductList(productInfo)
           }
 
