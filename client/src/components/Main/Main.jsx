@@ -2,6 +2,8 @@ import React from "react";
 import ProductList from '../Main/ProductList/ProductList'
 import './Main.css'
 import arrow from './img/arrow.png'
+import arrowRight from './img/arrow-right.png'
+import arrowLeft from './img/arrow-left.png'
 
 const Main = (props) => {
 
@@ -38,8 +40,8 @@ const Main = (props) => {
   </ul>
   <ProductList productList={props.infoProduct.productList} className='productList'/>
   <div className="pagination">
-  <button onClick={()=>handleClickPage('resta')}>Anterior</button>
-  <button onClick={()=>handleClickPage('suma')}>Siguiente</button>
+  <button onClick={()=>handleClickPage('resta')}><img src={arrowLeft} className="arrow"></img>Anterior</button>
+  <button onClick={()=>handleClickPage('suma')}>Siguiente<img src={arrowRight} className="arrow"></img></button>
   </div>
   </main>;
 };

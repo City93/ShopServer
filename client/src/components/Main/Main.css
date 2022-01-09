@@ -38,18 +38,16 @@ main{
 }
 .pagination{
     display: flex;
-    width: 200px;
-    justify-content: space-around;
+    width: 250px;
+    justify-content: space-between;
     font-family: 'Alegreya Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 40px;
-    /* or 200% */
-    width: 200px;
     height: 38px;
 
-    color: #494949;
+    color:#B7B7B7;
     
 }
 button{
