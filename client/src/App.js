@@ -13,7 +13,7 @@ import { useDebounce } from "use-debounce";
 const App = () => {
     const [input, changeInput] = useState('');
     const [productList, changeProductList] = useState([])
-    const [nameSort, changeNameSort] = useState(1)
+    const [nameSort, changeNameSort] = useState()
     const [ratingSort, changeRatingSort] = useState()
     const [priceSort, changePriceSort] = useState()
     const [value] = useDebounce(input, 1000)
@@ -22,16 +22,15 @@ const App = () => {
       const getProducts = async (searchValue) =>{
         try{
           let uri;
-          console.log(value)
           if(searchValue){            
             if(nameSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&name=${nameSort}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&name=${parseInt(nameSort)}`
             }
             else if(ratingSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&rating=${ratingSort}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&rating=${parseInt(ratingSort)}`
             }
             else if(priceSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&price=${nameSort}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&price=${parseInt(priceSort)}`
             }
             else{
               uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}`
@@ -54,8 +53,20 @@ const App = () => {
           changeProductList(productInfo)
           }
           else{
-              console.log({uri})
-              const data = await axios.get('http://localhost:3000/')
+            if(nameSort){
+              uri = `http://localhost:3000/?name=${parseInt(nameSort)}`
+            }
+            else if(ratingSort){
+              uri = `http://localhost:3000/?rating=${parseInt(ratingSort)}`
+            }
+            else if(priceSort){
+              uri = `http://localhost:3000/?price=${parseInt(priceSort)}`
+            }
+            else{
+              uri = `http://localhost:3000/`
+            }
+            console.log({uri})
+              const data = await axios.get(uri)
               const products = data.data.docs
               const productInfo = products.map((el,i) =>{return {
                 name: el.name,
@@ -78,18 +89,47 @@ const App = () => {
 
       }
       getProducts(value);
-   },[value])
+   },[value,nameSort,ratingSort,priceSort])
 
 
    const handleChange = (search) =>{
      changeInput(search)
+   }
+   const handleChangeSortName = (sort) => {
+      changeNameSort(sort)
+      changeRatingSort()
+      changePriceSort()
+   }
+   const handleChangeSortRating = (sort) => {
+    changeRatingSort(sort)
+    changeNameSort()
+    changePriceSort()
+ }
+ const handleChangeSortPrice = (sort) => {
+  changePriceSort(sort)
+  changeRatingSort()
+  changeNameSort()
+}
+console.log([
+  {nameSort},
+  {priceSort},
+  {ratingSort}
+])
+   const infoProduct = {
+     productList,
+     handleChangeSortName,
+     nameSort,
+     handleChangeSortPrice,
+     priceSort,
+     handleChangeSortRating,
+     ratingSort
    }
 
 
   return (
     <div className="App">
       <Header handleChange = {handleChange} />
-      <Main productList = {productList}/>
+      <Main infoProduct = {infoProduct}/>
       <Footer/>
     </div>
   );
