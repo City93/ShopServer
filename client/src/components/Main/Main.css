@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&display=swap');
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.productList{
+    width: 70%;
+    /* border: 1px black solid; */
+}
+.sort{
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    /* border: 1px red solid; */
+    width: 71%;    
+}
+.sort li button{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    /* or 200% */
+    width: 118px;
+    height: 38px;
+
+    color: #B7B7B7;
+}
+.arrow{
+    width: 17px;
+    height: 17px;
+    margin-left:5px;
+}
+.pagination{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    height: 38px;
+
+    color:#B7B7B7;
+    
+}
+button{
+    display: flex;
+    align-items: center;
+
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
