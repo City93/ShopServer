@@ -11,29 +11,33 @@ import Footer from '../src/components/Footer/Footer'
 import { useDebounce } from "use-debounce";
 
 const App = () => {
-    const [input, changeInput] = useState('');
+    const [inputSearch, changeInput] = useState('');
     const [productList, changeProductList] = useState([])
     const [nameSort, changeNameSort] = useState()
     const [ratingSort, changeRatingSort] = useState()
     const [priceSort, changePriceSort] = useState()
-    const [value] = useDebounce(input, 1000)
-
+    const [page, changePage] = useState('1')
+    const [valueSearch] = useDebounce(inputSearch, 1000)
+    console.log({inputSearch})
+    console.log({valueSearch})
      useEffect(() =>{
       const getProducts = async (searchValue) =>{
         try{
+          console.log({inputSearch})
+          console.log({valueSearch})
           let uri;
           if(searchValue){            
             if(nameSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&name=${parseInt(nameSort)}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&name=${parseInt(nameSort)}&page=${page}`
             }
             else if(ratingSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&rating=${parseInt(ratingSort)}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&rating=${parseInt(ratingSort)}&page=${page}`
             }
             else if(priceSort){
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&price=${parseInt(priceSort)}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&price=${parseInt(priceSort)}&page=${page}`
             }
             else{
-              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}`
+              uri = `http://localhost:3000/search?search=${searchValue.toLowerCase()}&page=${page}`
             }
             // console.log({searchValue})
             console.log({uri})
@@ -54,16 +58,16 @@ const App = () => {
           }
           else{
             if(nameSort){
-              uri = `http://localhost:3000/?name=${parseInt(nameSort)}`
+              uri = `http://localhost:3000/?name=${parseInt(nameSort)}&page=${page}`
             }
             else if(ratingSort){
-              uri = `http://localhost:3000/?rating=${parseInt(ratingSort)}`
+              uri = `http://localhost:3000/?rating=${parseInt(ratingSort)}&page=${page}`
             }
             else if(priceSort){
-              uri = `http://localhost:3000/?price=${parseInt(priceSort)}`
+              uri = `http://localhost:3000/?price=${parseInt(priceSort)}&page=${page}`
             }
             else{
-              uri = `http://localhost:3000/`
+              uri = `http://localhost:3000/?page=${page}`
             }
             console.log({uri})
               const data = await axios.get(uri)
@@ -82,14 +86,14 @@ const App = () => {
             //console.log({productInfo})
             changeProductList(productInfo)
           }
-
+          
         } catch (err){
           console.error(err)
         }
-
+        
       }
-      getProducts(value);
-   },[value,nameSort,ratingSort,priceSort])
+      getProducts(valueSearch);
+   },[valueSearch,nameSort,ratingSort,priceSort, page])
 
 
    const handleChange = (search) =>{
@@ -110,11 +114,14 @@ const App = () => {
   changeRatingSort()
   changeNameSort()
 }
-console.log([
-  {nameSort},
-  {priceSort},
-  {ratingSort}
-])
+const handlePagination = (page) =>{
+  changePage(page)
+}
+// console.log([
+//   {nameSort},
+//   {priceSort},
+//   {ratingSort}
+// ])
    const infoProduct = {
      productList,
      handleChangeSortName,
@@ -122,7 +129,9 @@ console.log([
      handleChangeSortPrice,
      priceSort,
      handleChangeSortRating,
-     ratingSort
+     ratingSort,
+     handlePagination,
+     page
    }
 
 

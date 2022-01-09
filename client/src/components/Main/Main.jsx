@@ -17,6 +17,18 @@ const Main = (props) => {
       !props.infoProduct.priceSort || props.infoProduct.priceSort=='-1'?props.infoProduct.handleChangeSortPrice('1'):props.infoProduct.handleChangeSortPrice('-1')
     }
   }
+  const handleClickPage = (page) =>{
+    if(page=='suma'){
+      let pagesNumber = props.infoProduct.productList
+      console.log(pagesNumber)
+      let nextPage = ++props.infoProduct.page
+      props.infoProduct.handlePagination(nextPage)
+    }
+    else if(page=='resta'){
+      let nextPage = props.infoProduct.page !== 1  ? --props.infoProduct.page: props.infoProduct.page
+      props.infoProduct.handlePagination(nextPage)
+    }
+  }
 
   return <main>
   <ul className="sort">
@@ -25,6 +37,10 @@ const Main = (props) => {
     <li className="priceSort"><button onClick={()=>handleClick('price')}>Precio<img src={arrow} className="arrow"></img></button></li>
   </ul>
   <ProductList productList={props.infoProduct.productList} className='productList'/>
+  <div className="pagination">
+  <button onClick={()=>handleClickPage('resta')}>Anterior</button>
+  <button onClick={()=>handleClickPage('suma')}>Siguiente</button>
+  </div>
   </main>;
 };
 
